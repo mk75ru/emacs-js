@@ -79,14 +79,12 @@ See the documentation of =company-mode= for more.
 
 *** AMD module handling
 
-- =C-c C-a s=: =amd-search-references=: Search for modules that require
-the buffer's file.
-- =C-c C-a f=: =amd-import-file=: Prompt for a file to import. When
-called with a prefix argument, always insert the relative path of the file.
-- =C-c C-a m=: =amd-import-module=: Prompt for a module name to
-import.
-- =C-c C-a o=: =amd-find-module-at-point=: Find a module named after
-the node at point.
+- =C-c C-a s=: =amd-search-references=: Search for modules that require the buffer's file.
+- =C-c C-a f=: =amd-import-file=: Prompt for a file to import. When called with
+  a prefix argument, always insert the relative path of the file.
+- =C-c C-a m=: =amd-import-module=: Prompt for a module name to import.
+- =C-c C-a o=: =amd-find-module-at-point=: Find a module named after the node at
+  point.
 - =C-c C-a a=: =amd-auto-insert=: Insert an empty module definition.
 
 *** WidgetJS / Crockford style
