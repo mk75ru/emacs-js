@@ -26,12 +26,12 @@ use [[https://github.com/foretagsplatsen/widget-js][WidgetJS]].
 
 - Emacs 25 (pretests available [[http://alpha.gnu.org/gnu/emacs/][here]])
 - [[http://melpa.org/][MELPA]]
-- `ag' (the [[http://geoff.greer.fm/ag/][silver searcher]])
-- `tern` ([[http://ternjs.net/][website]])
+- =ag= (the [[http://geoff.greer.fm/ag/][silver searcher]])
+- =tern= ([[http://ternjs.net/][website]])
 
 ** Installation
 
-1. Remove any JS settings from your Emacs configuration (*backups everything before!*)
+1. Remove any JS settings from your Emacs configuration (*backup everything before!*)
 2. Make sure you have setup Emacs package.el to use MELPA
 3. Clone this repository in your =.emacs.d= (as a submodule if your emacs
    settings are versioned using git)
