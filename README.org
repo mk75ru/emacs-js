@@ -41,7 +41,7 @@ use [[https://github.com/foretagsplatsen/widget-js][WidgetJS]].
 (load-file "emacs-js/emacs-js.el")
 #+END_SRC
 
-5. Enjoy!
+*Enjoy!*
 
 ** Settings
 
