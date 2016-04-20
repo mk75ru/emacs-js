@@ -93,10 +93,10 @@ unreachable."
 (add-to-list 'company-backends 'company-tern)
 
 ;; paredit-like commands for JS
-(define-key js2-mode-map (kbd "<C-right>") #'js2r-forward-slurp)
-(define-key js2-mode-map (kbd "<C-left>") #'js2r-forward-barf)
-(define-key js2-mode-map (kbd "C-k") #'js2r-kill)
-(define-key js2-mode-map (kbd "M-S") #'js-smart-split)
+(define-key js-mode-map (kbd "<C-right>") #'js2r-forward-slurp)
+(define-key js-mode-map (kbd "<C-left>") #'js2r-forward-barf)
+(define-key js-mode-map (kbd "C-k") #'js2r-kill)
+(define-key js-mode-map (kbd "M-S") #'js-smart-split)
 
 ;;; Convenience functions
 
