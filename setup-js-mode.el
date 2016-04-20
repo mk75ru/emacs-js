@@ -61,6 +61,10 @@
 ;; We have JS files in Scripts directories, ignore that
 (add-to-list 'xref-js2-ignored-dirs "Scripts")
 
+;; Also ignore some other files
+(dolist (file '("require.js" "highcharts.js" "highcharts.src.js" "bootstrap.js" "Gruntfile.js" "moment.js" "moment-with-locales.js"))
+  (add-to-list 'xref-js2-ignored-files file))
+
 ;; tern will override js2r keybindings...
 (define-key tern-mode-keymap (kbd "C-c C-r") nil)
 
