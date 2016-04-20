@@ -34,14 +34,14 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(let ((packages-to-load '(js2-mode
-                          js2-refactor
-                          amd-mode
-                          tern
-                          projectile
+(let ((packages-to-load '(amd-mode
                           company-tern
                           flycheck
                           grunt
+                          js2-mode
+                          js2-refactor
+                          projectile
+                          tern
                           xref-js2)))
   (dolist (package packages-to-load)
     (when (not (package-installed-p package))
