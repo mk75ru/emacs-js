@@ -38,7 +38,7 @@ use [[https://github.com/foretagsplatsen/widget-js][WidgetJS]].
 4. Add the following to your =.emacs.d/init.el=:
 
 #+BEGIN_SRC elisp
-(load-file "emacs-js/setup.el")
+(load-file "emacs-js/emacs-js.el")
 #+END_SRC
 
 5. Enjoy!

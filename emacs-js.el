@@ -48,5 +48,5 @@
 (load-file "widgetjs/widgetjs-mode.el")
 (load-file "setup-js-mode.el")
 
-(provide 'setup)
+(provide 'emacs-js)
 ;;; setup.el ends here
