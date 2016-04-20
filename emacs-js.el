@@ -29,6 +29,8 @@
 
 (package-initialize)
 
+(add-to-list 'load-path "widgetjs")
+
 (when (not package-archive-contents)
   (package-refresh-contents))
 
@@ -45,8 +47,7 @@
     (when (not (package-installed-p package))
       (package-install package))))
 
-(load-file "widgetjs/widgetjs-mode.el")
-(load-file "setup-js-mode.el")
+(require 'setup-js-mode)
 
 (provide 'emacs-js)
 ;;; setup.el ends here
