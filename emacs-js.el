@@ -48,6 +48,7 @@
       (package-install package))))
 
 (require 'setup-js-mode)
+(require 'monitor-setup)
 
 (provide 'emacs-js)
 ;;; setup.el ends here
