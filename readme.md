@@ -38,9 +38,9 @@ use [WidgetJS](https://github.com/foretagsplatsen/widget-js).
 4. In `emacs-js`, run `git submodule init && git submodule update`
 5. Add the following to your `.emacs.d/init.el`:
 
-#+BEGIN_SRC elisp
+```
 (load-file "emacs-js/emacs-js.el")
-#+END_SRC
+```
 
 *Enjoy!*
 
@@ -52,24 +52,48 @@ use [WidgetJS](https://github.com/foretagsplatsen/widget-js).
   in js-mode, following the standards we have at Företagsplatsen.
 - `C-k` Kills the line but does not break the AST! (see `js2r-kill`)
 
+
+## Screencasts
+
+### Jumping to definition
+
+![jump-to-definition.gif](screencasts/jump-to-definition.gif)
+
+### Jumping to references
+
+![jump-to-references.gif](screencasts/jump-to-references.gif)
+
+### Code completion
+
+![completion.gif](screencasts/completion.gif)
+
+### Documtentation
+
+![documentation.gif](screencasts/documentation.gif)
+
+### Refactorings
+
+![refactorings.gif](screencasts/refactorings.gif)
+
+### AMD modules
+
+![amd.gif](screencasts/amd.gif)
+
+### Crockford style helpers
+
+![function-to-that.gif](screencasts/function-to-that.gif)
+
+
 ## Keybindings
 
 This section lists most keybindings of the installed packages:
 
-##* Jumping to definition
-
-![jump-to-definition.gif](screencasts/jump-to-definition.gif)
-
-##* Jumping to references
-
-![jump-to-references.gif](screencasts/jump-to-references.gif)
-
-##* Navigation
+### Navigation
 - `M-.` Jump to the definition at point
 - `M-?` Jump to references (usages) of the symbol at point
 - `M-,` Pop back to where `M-.` was last invoked
 
-##* Completion
+### Completion
 
 Completion starts automatically. When completing:
 
@@ -79,14 +103,14 @@ Completion starts automatically. When completing:
 
 See the documentation of `company-mode` for more.
 
-##* Documentation
+### Documentation
 
 - `C-c C-d`: Show the documentation for the function at point in the echo area
 - `C-c C-d C-c C-d`: Open a web browser tab on the documentation of the function
   at point
 - `C-c m`: Start a search on the Mozilla Developer Network
 
-##* AMD module handling
+### AMD module handling
 
 - `C-c C-a s`: `amd-search-references`: Search for modules that require the buffer's file.
 - `C-c C-a f`: `amd-import-file`: Prompt for a file to import. When called with
@@ -96,14 +120,14 @@ See the documentation of `company-mode` for more.
   point.
 - `C-c C-a a`: `amd-auto-insert`: Insert an empty module definition.
 
-##* WidgetJS / Crockford style
+### WidgetJS / Crockford style
 
 - `C-c C-w m`: Convert function to method on `my`
 - `C-c C-w t`: Convert function to method on `that`
 - `C-c C-w l`: Make the string at point translatable, surrounding it with `_()`
 - `C-c C-w h`: Expand a lisp list into a WidgetJS HTML rendering
 
-##* Refactorings
+### Refactorings
 
 - `C-c C-r e f` is `extract-function`: Extracts the marked expressions out into a new named function.
 - `C-c C-r i p` is `introduce-parameter`: Changes the marked expression to a parameter in a local function.
