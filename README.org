@@ -56,6 +56,14 @@ use [[https://github.com/foretagsplatsen/widget-js][WidgetJS]].
 
 This section lists most keybindings of the installed packages:
 
+*** Jumping to definition
+
+[[file:screencasts/jump-to-definition.gif][jump-to-definition.gif]]
+
+*** Jumping to references
+
+[[file:screencasts/jump-to-references.gif][jump-to-references.gif]]
+
 *** Navigation
 - =M-.= Jump to the definition at point
 - =M-?= Jump to references (usages) of the symbol at point
