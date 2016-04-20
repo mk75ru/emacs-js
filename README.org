@@ -35,7 +35,8 @@ use [[https://github.com/foretagsplatsen/widget-js][WidgetJS]].
 2. Make sure you have setup Emacs package.el to use MELPA
 3. Clone this repository in your =.emacs.d= (as a submodule if your emacs
    settings are versioned using git)
-4. Add the following to your =.emacs.d/init.el=:
+4. In =emacs-js=, run =git submodule init && git submodule update=
+5. Add the following to your =.emacs.d/init.el=:
 
 #+BEGIN_SRC elisp
 (load-file "emacs-js/emacs-js.el")
