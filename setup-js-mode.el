@@ -50,7 +50,7 @@
   (widgetjs-mode 1)
 
   ;; add xref-js2 support
-  (add-hook 'xref-backend-functions #'xref-js2--xref-backend nil t)
+  (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)
 
   (setq-local compile-command "grunt")
 
