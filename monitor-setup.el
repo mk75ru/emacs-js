@@ -28,8 +28,8 @@
 (require 'amd-mode)
 
 ;; Rewrite rules for monitor
-(add-to-list 'amd-rewrite-rules-alist
-             '("^monitor/Monitor.Web.Ui/Client/js/" . ""))
+(setq-default amd-rewrite-rules-alist
+             '(("^monitor/Monitor.Web.Ui/Client/js/" . "")))
 
 (provide 'monitor-setup)
 ;;; monitor-setup.el ends here
