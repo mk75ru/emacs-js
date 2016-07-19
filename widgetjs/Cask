@@ -1,6 +1,6 @@
 (source melpa)
 
-(package-file "widgetjs-mode.el")
+(package-file "widgetjs.el")
 
 (depends-on "makey")
 (depends-on "js2-mode")

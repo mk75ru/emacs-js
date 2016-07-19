@@ -1,4 +1,4 @@
-;;; widgetjs-mode.el --- Widgetjs mode
+;;; widgetjs.el --- Widgetjs mode
 
 ;; Copyright (C) 2014  Nicolas Petton
 
@@ -24,9 +24,6 @@
 ;; Minor mode for widgetjs.
 
 ;;; Code:
-
-(provide 'widgetjs-mode)
-;;; widgetjs-mode.el ends here
 
 (require 's)
 (require 'makey)
@@ -264,5 +261,5 @@ a string."
 
 (define-key widgetjs-mode-map (kbd "C-c C-w") #'widgetjs-initialize-makey-group)
 
-(provide 'widgetjs-mode)
-;;; widgetjs-mode ends here
+(provide 'widgetjs)
+;;; widgetjs.el ends here

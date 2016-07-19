@@ -5,7 +5,7 @@
 
 (add-to-list 'load-path js2-refactor-root-path)
 
-(require 'widgetjs-mode)
+(require 'widgetjs)
 (require 'js2-mode)
 (require 'espuds)
 (require 'ert)
