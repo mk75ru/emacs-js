@@ -1,4 +1,4 @@
-;;; emacs-js --- JS-mode Setup                -*- lexical-binding: t; -*-
+;;; emacs-js.el --- JS-mode Setup                -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Nicolas Petton
 
@@ -8,6 +8,7 @@
 ;; GIT: https://github.com/foretagsplatsen/emacs-js
 ;; Package-Requires: ((emacs "24.4") (js2-mode "20160623") (js2-refactor "0.7.1") (amd-mode "1.1") (tern "0.19.0") (widgetjs "20160719") (company-tern "0.2.0") (flycheck "28") (grunt "1.3.2") (xref-js2 "1.3"))
 ;; Created: 20 Apr 2016
+
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
