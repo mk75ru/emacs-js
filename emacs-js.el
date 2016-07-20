@@ -115,7 +115,7 @@ unreachable."
 
 (defun mdn-search (searchString)
   "Open a browser on the MDN page for SEARCHSTRING."
-  (interactive (list (read-string "Search: " (current-thing))))
+  (interactive (list (read-string "Search: " (thing-at-point 'symbol))))
   (browse-url (format "https://developer.mozilla.org/en-US/search?q=%s&topic=js" searchString)))
 
 (define-key js-mode-map (kbd "C-c m") #'mdn-search)
