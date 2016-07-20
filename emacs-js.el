@@ -33,12 +33,11 @@
 (require 'js2-refactor)
 (require 'amd-mode)
 (require 'tern)
-(require 'widgetjs-mode)
+(require 'widgetjs)
 (require 'company-tern)
 (require 'flycheck)
 (require 'grunt)
 (require 'xref-js2)
-(require 'widgetjs-mode)
 
 (add-hook 'js-mode-hook #'setup-js-buffer)
 
