@@ -40,17 +40,17 @@
 (require 'grunt)
 (require 'xref-js2)
 
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-(add-hook 'js2-mode-hook #'setup-js-buffer)
+(add-hook 'js-mode-hook #'setup-js-buffer)
 
 (defun setup-js-buffer ()
-  (setq mode-name "JS2")
+  (setq mode-name "JS")
   (company-mode 1)
   (tern-mode 1)
   ;; When the buffer is not visiting a file, eslint systematically fails
   (if buffer-file-name
       (flycheck-mode 1)
     (flycheck-mode -1))
+  (js2-minor-mode 1)
   (js2-refactor-mode 1)
   (amd-mode 1)
   (widgetjs-mode 1)
