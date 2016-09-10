@@ -1,4 +1,4 @@
-;;; gulp.el --- Gulp task runner                     -*- lexical-binding: t; -*-
+;;; gulp-task-runner.el --- Gulp task runner                     -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016  Nicolas Petton
 
@@ -25,6 +25,7 @@
 ;;; Code:
 
 (defun gulp ()
+  "Prompt for a gulp task and run it."
   (interactive)
   (let* ((tasks (gulp--get-tasks))
          (task (completing-read "Gulp task: " tasks)))
@@ -35,5 +36,5 @@
     (shell-command "gulp --tasks-simple" (current-buffer))
     (split-string (buffer-string) "\n")))
 
-(provide 'gulp)
-;;; gulp.el ends here
+(provide 'gulp-task-runner)
+;;; gulp-task-runner.el ends here

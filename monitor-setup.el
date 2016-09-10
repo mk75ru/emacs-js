@@ -28,7 +28,7 @@
 (require 'amd-mode)
 
 ;; Rewrite rules for monitor
-(setq amd-rewrite-rules-alist
+(setq-default amd-rewrite-rules-alist
       '(("^monitor/Monitor.Web.Ui/Client/js/" . "")))
 
 (provide 'monitor-setup)

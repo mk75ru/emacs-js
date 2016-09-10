@@ -35,7 +35,7 @@
 (require 'amd-mode)
 (require 'tern)
 (require 'widgetjs)
-(require 'gulp)
+(require 'gulp-task-runner)
 (require 'company-tern)
 (require 'flycheck)
 (require 'grunt)
