@@ -37,6 +37,7 @@
 (let ((packages-to-load '(amd-mode
                           company-tern
                           flycheck
+                          gulp-task-runner
                           grunt
                           js2-mode
                           js2-refactor
