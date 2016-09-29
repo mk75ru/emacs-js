@@ -49,7 +49,6 @@
       (package-install package))))
 
 (require 'emacs-js)
-(require 'monitor-setup)
 
 (provide 'emacs-js-setup)
 ;;; emacs-js-setup.el ends here
