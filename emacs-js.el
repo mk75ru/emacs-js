@@ -48,8 +48,7 @@
   (company-mode 1)
   (tern-mode 1)
   ;; When the buffer is not visiting a file, eslint systematically fails
-  (if buffer-file-name
-      (flycheck-mode 1)
+  (unless buffer-file-name
     (flycheck-mode -1))
   (js2-minor-mode 1)
   (js2-refactor-mode 1)
