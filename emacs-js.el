@@ -40,6 +40,7 @@
 (require 'flycheck)
 (require 'grunt)
 (require 'xref-js2)
+(require 'yasnippet)
 
 (add-hook 'js-mode-hook #'setup-js-buffer)
 
@@ -63,7 +64,9 @@
 
   ;; we use tabs in JS files
   (setq tab-width 4)
-  (setq indent-tabs-mode t))
+  (setq indent-tabs-mode t)
+
+  (yas-minor-mode +1))
 
 ;; We have JS files in Scripts directories, ignore that
 (add-to-list 'xref-js2-ignored-dirs "Scripts")
@@ -199,6 +202,12 @@ unreachable."
            (+ js-indent-level js-expr-indent-offset))
           (t 0))))
 
+(add-to-list 'yas-snippet-dirs
+             (expand-file-name "snippets"
+                               (file-name-directory
+                                (or load-file-name buffer-file-name)))
+             t)
+(yas-reload-all)
 
 (provide 'emacs-js)
 ;;; emacs-js.el ends here
