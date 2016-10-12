@@ -88,6 +88,7 @@
 (define-key js-mode-map (kbd "C-c C-j") nil)
 
 (define-key amd-mode-map (kbd "C-c C-a") #'amd-initialize-makey-group)
+(setq amd-use-relative-file-name t)
 
 ;; eslint parser executable can be overridden in some projects but marked as
 ;; risky, so silence that.
