@@ -39,6 +39,7 @@
                           flycheck
                           gulp-task-runner
                           grunt
+                          jade
                           js2-mode
                           js2-refactor
                           projectile

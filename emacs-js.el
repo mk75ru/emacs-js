@@ -41,6 +41,7 @@
 (require 'grunt)
 (require 'xref-js2)
 (require 'yasnippet)
+(require 'jade)
 
 (add-hook 'js-mode-hook #'setup-js-buffer)
 
@@ -54,6 +55,7 @@
     (flycheck-mode -1))
   (js2-minor-mode 1)
   (js2-refactor-mode 1)
+  (jade-interaction-mode 1)
   (amd-mode 1)
   (widgetjs-mode 1)
 
