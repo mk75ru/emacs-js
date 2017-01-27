@@ -68,6 +68,10 @@
   (setq tab-width 4)
   (setq indent-tabs-mode t)
 
+  (setq js2-global-externs '("define" "require" "app"))
+  (setq js2-include-node-externs t)
+  (setq js2-pretty-multiline-declarations nil)
+
   (yas-minor-mode +1))
 
 ;; We have JS files in Scripts directories, ignore that
