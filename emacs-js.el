@@ -33,6 +33,7 @@
 (require 'js2-mode)
 (require 'js2-refactor)
 (require 'amd-mode)
+(require 'eslintd-fix)
 (require 'tern)
 (require 'widgetjs)
 (require 'gulp-task-runner)
@@ -42,6 +43,10 @@
 (require 'xref-js2)
 (require 'yasnippet)
 (require 'jade)
+
+(if (executable-find "eslint_d")
+    (setq flycheck-javascript-eslint-executable "eslint_d")
+  (warn "emacs-js: You might want to install eslint_d: sudo npm install -g eslint_d."))
 
 (add-hook 'js-mode-hook #'setup-js-buffer)
 
@@ -58,6 +63,9 @@
   (jade-interaction-mode 1)
   (amd-mode 1)
   (widgetjs-mode 1)
+
+  ;; add eslintd-fix support
+  (eslintd-fix-mode)
 
   ;; add xref-js2 support
   (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)
