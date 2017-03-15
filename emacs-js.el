@@ -98,6 +98,7 @@
 (define-key tern-mode-keymap (kbd "M-,") nil)
 
 (js2r-add-keybindings-with-prefix "C-c C-r")
+(setq js2r-always-insert-parens-around-arrow-function-params t)
 
 (define-key js-mode-map (kbd "M-.") nil)
 (define-key js-mode-map (kbd "C-c C-j") nil)
