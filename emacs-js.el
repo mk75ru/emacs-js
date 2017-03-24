@@ -50,6 +50,8 @@
 
 (add-hook 'js-mode-hook #'setup-js-buffer)
 
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
 (defun setup-js-buffer ()
   (setq mode-name "JS")
   (company-mode 1)
@@ -60,6 +62,7 @@
     (flycheck-mode -1))
   (js2-minor-mode 1)
   (js2-refactor-mode 1)
+  (js2-imenu-extras-mode)
   (jade-interaction-mode 1)
   (amd-mode 1)
   (widgetjs-mode 1)
