@@ -83,6 +83,22 @@
 
   (yas-minor-mode +1))
 
+(defun add-jasmine-externs ()
+  "Add jasmine global names to `js2-additional-externs'."
+  (mapc (lambda (extern) (add-to-list 'js2-additional-externs extern))
+        '("jasmine"
+          "describe" "it"
+          "expect" "spyOn"
+          "beforeEach" "afterEach" "beforeAll" "afterAll")))
+
+(defun setup-js2-init ()
+  "Hook run when js2 is initializing a buffer."
+  (when (and buffer-file-name
+             (string-match-p "-tests.js$" buffer-file-name))
+    (add-jasmine-externs)))
+
+(add-hook 'js2-init-hook #'setup-js2-init)
+
 ;; We have JS files in Scripts directories, ignore that
 (add-to-list 'xref-js2-ignored-dirs "Scripts")
 
