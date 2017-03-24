@@ -84,7 +84,12 @@
   (setq js2-include-node-externs t)
   (setq js2-pretty-multiline-declarations nil)
 
-  (yas-minor-mode +1))
+  (yas-minor-mode +1)
+
+  (set (make-local-variable 'company-backends)
+       ;; Adding `company-tern' and `company-yasnippet' as a group
+       ;; (recommanded by `company-yasnippet')
+       (cons '(company-tern company-yasnippet) company-backends)))
 
 (defun add-jasmine-externs ()
   "Add jasmine global names to `js2-additional-externs'."
@@ -135,8 +140,6 @@ The process will be restarted.  This is useful if tern becomes
 unreachable."
   (interactive)
   (delete-process "Tern"))
-
-(add-to-list 'company-backends 'company-tern)
 
 ;; paredit-like commands for JS
 (define-key js-mode-map (kbd "<C-right>") #'js2r-forward-slurp)
