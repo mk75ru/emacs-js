@@ -89,7 +89,10 @@
   (set (make-local-variable 'company-backends)
        ;; Adding `company-tern' and `company-yasnippet' as a group
        ;; (recommanded by `company-yasnippet')
-       (cons '(company-tern company-yasnippet) company-backends)))
+       (cons '(company-tern company-yasnippet) company-backends))
+
+  (set (make-local-variable 'company-dabbrev-ignore-case) nil)
+  (set (make-local-variable 'company-dabbrev-downcase) nil))
 
 (defun add-jasmine-externs ()
   "Add jasmine global names to `js2-additional-externs'."
