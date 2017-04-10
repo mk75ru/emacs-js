@@ -105,7 +105,7 @@
 (defun setup-js2-init ()
   "Hook run when js2 is initializing a buffer."
   (when (and buffer-file-name
-             (string-match-p "-tests.js$" buffer-file-name))
+             (string-match-p "-tests?.js$" buffer-file-name))
     (add-jasmine-externs)))
 
 (add-hook 'js2-init-hook #'setup-js2-init)
