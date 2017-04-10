@@ -98,7 +98,7 @@
   "Add jasmine global names to `js2-additional-externs'."
   (mapc (lambda (extern) (add-to-list 'js2-additional-externs extern))
         '("jasmine"
-          "describe" "it"
+          "describe" "fdescribe" "it" "fit"
           "expect" "spyOn"
           "beforeEach" "afterEach" "beforeAll" "afterAll")))
 
