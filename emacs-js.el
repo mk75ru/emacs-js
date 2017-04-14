@@ -42,7 +42,7 @@
 (require 'grunt)
 (require 'xref-js2)
 (require 'yasnippet)
-(require 'jade)
+(require 'indium)
 
 (if (executable-find "eslint_d")
     (setq flycheck-javascript-eslint-executable "eslint_d")
@@ -63,7 +63,7 @@
   (js2-minor-mode 1)
   (js2-refactor-mode 1)
   (js2-imenu-extras-mode)
-  (jade-interaction-mode 1)
+  (indium-interaction-mode 1)
   (amd-mode 1)
   (widgetjs-mode 1)
 

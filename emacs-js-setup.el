@@ -40,7 +40,7 @@
                           flycheck
                           gulp-task-runner
                           grunt
-                          jade
+                          indium
                           js2-mode
                           js2-refactor
                           projectile
