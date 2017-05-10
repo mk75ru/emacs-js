@@ -86,11 +86,6 @@
 
   (yas-minor-mode +1)
 
-  (set (make-local-variable 'company-backends)
-       ;; Adding `company-tern' and `company-yasnippet' as a group
-       ;; (recommanded by `company-yasnippet')
-       (cons '(company-tern company-yasnippet) company-backends))
-
   (set (make-local-variable 'company-dabbrev-ignore-case) nil)
   (set (make-local-variable 'company-dabbrev-downcase) nil))
 
@@ -143,6 +138,8 @@ The process will be restarted.  This is useful if tern becomes
 unreachable."
   (interactive)
   (delete-process "Tern"))
+
+(add-to-list 'company-backends 'company-tern)
 
 ;; paredit-like commands for JS
 (define-key js-mode-map (kbd "<C-right>") #'js2r-forward-slurp)
