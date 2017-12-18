@@ -6,7 +6,7 @@
 ;; Keywords: convenience javascript
 ;; Version: 0.1
 ;; GIT: https://github.com/foretagsplatsen/emacs-js
-;; Package-Requires: ((emacs "24.4") (js2-mode "20160623") (js2-refactor "0.7.1") (amd-mode "1.1") (tern "0.19.0") (widgetjs "20160719") (company-tern "0.2.0") (flycheck "28") (grunt "1.3.2") (xref-js2 "1.3"))
+;; Package-Requires: ((emacs "24.4") (js2-mode "20160623") (js2-refactor "0.7.1") (amd-mode "1.1") (tern "0.19.0") (widgetjs "20160719") (company-tern "0.2.0") (flycheck "28") (xref-js2 "1.3"))
 ;; Created: 20 Apr 2016
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -39,7 +39,6 @@
 (require 'gulp-task-runner)
 (require 'company-tern)
 (require 'flycheck)
-(require 'grunt)
 (require 'xref-js2)
 (require 'yasnippet)
 (require 'indium)

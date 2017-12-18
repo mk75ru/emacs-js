@@ -15,7 +15,6 @@ The package provides:
 - Smart completion and type inference using tern and company-mode
 - JavaScript refactorings with [js2-refactor](https://github.com/magnars/js2-refactor.el)
 - Linting with [Flycheck](https://github.com/flycheck/flycheck)
-- Grunt integration
 - AMD module handling using [amd-mode](https://github.com/NicolasPetton/amd-mode.el)
 - Good defaults and settings of the above packages
 

@@ -39,7 +39,6 @@
                           eslintd-fix
                           flycheck
                           gulp-task-runner
-                          grunt
                           indium
                           js2-mode
                           js2-refactor
