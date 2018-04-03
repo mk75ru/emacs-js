@@ -82,6 +82,7 @@
   (setq js2-global-externs '("define" "require" "app"))
   (setq js2-include-node-externs t)
   (setq js2-pretty-multiline-declarations nil)
+  (setq js2-strict-trailing-comma-warning t)
 
   (yas-minor-mode +1)
 
