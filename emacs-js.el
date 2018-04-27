@@ -52,7 +52,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 (defun setup-js-buffer ()
-  (unless (eq major-mode 'json-mode)
+  (when (and (derived-mode-p 'js-mode) (not (derived-mode-p 'json-mode)))
     (company-mode 1)
     (tern-mode 1)
     ;; When the buffer is not visiting a file, eslint systematically fails
