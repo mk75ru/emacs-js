@@ -79,7 +79,7 @@
   (setq indent-tabs-mode t)
   (setq js-switch-indent-offset 4)
 
-  (setq js2-global-externs '("define" "require" "app"))
+  (setq js2-global-externs '("define" "require" "app" "fetch"))
   (setq js2-include-node-externs t)
   (setq js2-pretty-multiline-declarations nil)
   (setq js2-strict-trailing-comma-warning t)
