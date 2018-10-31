@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: _serializedProperties
+# key: ser
+# --
+serializedProperties() {
+	let properties = super._serializedProperties();
+
+	properties.$1 = this._$1$0
+
+	return properties;
+}
