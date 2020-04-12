@@ -2,7 +2,11 @@
 # name: init
 # key: init
 # --
-my.initialize = function() {
-	my.super(...arguments)
-        $0
+_initialize() {
+	super._initialize(...arguments);
+	$0
+}
+
+_initializeSubwidgets() {
+	super._initializeSubwidgets(...arguments);
 }
