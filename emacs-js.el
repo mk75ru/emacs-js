@@ -74,9 +74,8 @@
 
   (setq-local compile-command "gulp")
 
-  ;; we use tabs in JS files
   (setq tab-width 4)
-  (setq indent-tabs-mode t)
+  (setq indent-tabs-mode nil)
   (setq js-switch-indent-offset 4)
 
   (setq js2-global-externs '("define" "require" "app" "fetch"))
