@@ -74,10 +74,9 @@
 
   (setq-local compile-command "gulp")
 
-  (setq tab-width 2)
+  (setq tab-width 4)
   (setq indent-tabs-mode nil)
-  (setq js-indent-level 2)
-  (setq js-switch-indent-offset 2)
+  (setq js-switch-indent-offset 4)
 
   (setq js2-global-externs '("define" "require" "app" "fetch"))
   (setq js2-include-node-externs t)
