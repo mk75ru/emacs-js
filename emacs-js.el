@@ -36,7 +36,6 @@
 (require 'eslintd-fix)
 (require 'tern)
 (require 'widgetjs)
-(require 'gulp-task-runner)
 (require 'company-tern)
 (require 'flycheck)
 (require 'xref-js2)
@@ -71,8 +70,6 @@
 
   ;; add xref-js2 support
   (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)
-
-  (setq-local compile-command "gulp")
 
   ;; we use tabs in JS files
   (setq tab-width 4)
