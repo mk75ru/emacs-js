@@ -109,6 +109,13 @@
 (dolist (file '("require.js" "highcharts.js" "highcharts.src.js" "bootstrap.js" "Gruntfile.js" "moment.js" "moment-with-locales.js"))
   (add-to-list 'xref-js2-ignored-files file))
 
+
+;; tern command-line
+(setq tern-command (append tern-command '(" --host 127.0.0.1")))
+(setq tern-command (append tern-command '("--port 46973")))
+(setq tern-command (append tern-command '("--persistent")))
+(setq tern-command (append tern-command '("--no-port-file")))
+
 ;; tern will override js2r keybindings...
 (define-key tern-mode-keymap (kbd "C-c C-r") nil)
 
